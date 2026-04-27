@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import requests
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder="templates")
 
 # Function to get exchange rate
 def convert_currency(from_currency, to_currency, amount):
